@@ -25,16 +25,16 @@ public class TestSelectionSort {
     @Test
     public void testMixed() {
         SelectionSort sorter = new SelectionSort();
-        int[] actual = {7, 2, -2, 0, -4};
-        int[] expected = {-4, -2, 0, 2, 7};
+        int[] actual = {9, 2, -1, 0, -4};
+        int[] expected = {-4, -1, 0, 2, 9};
         assertArrayEquals(expected, sorter.basicSelectionSort(actual));
     }
 
     @Test
     public void testDuplicates() {
         SelectionSort sorter = new SelectionSort();
-        int[] actual = {4, 1, 4, -6, 5};
-        int[] expected = {-6, 1, 4, 4, 5};
+        int[] actual = {4, 2, 4, -6, 8};
+        int[] expected = {-6, 2, 4, 4, 8};
         assertArrayEquals(expected, sorter.basicSelectionSort(actual));
     }
 }
