@@ -9,16 +9,16 @@ public class TestSelectionSort {
     @Test
     public void testPositive() {
         SelectionSort sorter = new SelectionSort();
-        int[] actual = {9, 6, 2, 1, 7};
-        int[] expected = {1, 2, 6, 7, 9};
+        int[] actual = {11, 6, 3, 1, 8};
+        int[] expected = {1, 3, 6, 8, 11};
         assertArrayEquals(expected, sorter.basicSelectionSort(actual));
     }
 
     @Test
     public void testNegative() {
         SelectionSort sorter = new SelectionSort();
-        int[] actual = {-1, -8, -2, -7, -9};
-        int[] expected = {-9, -8, -7, -2, -1};
+        int[] actual = {-1, -10, -4, -7, -13};
+        int[] expected = {-13, -10, -7, -4, -1};
         assertArrayEquals(expected, sorter.basicSelectionSort(actual));
     }
 
